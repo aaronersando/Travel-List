@@ -16,11 +16,11 @@ function App() {
   }
 
   function handleToggleItem(id) {
-    setItems((items) => {
+    setItems((items) =>
       items.map((item) =>
         item.id === id ? { ...item, packed: !item.packed } : item
-      );
-    });
+      )
+    );
   }
 
   function handleClearList() {
